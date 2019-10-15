@@ -15,7 +15,53 @@
 		//	accessible_thumbnail();
 		//	}?>
 
+			<?php
+			$author = get_field('author');
+			$journal = get_field('journal');
+			$year = get_field('year');
+			echo '<span class="meta">';
+
+			if($author):
+			echo $author;
+			endif;
+
+			if($journal):
+			echo ', <em>' . $journal . '</em>';
+			endif;
+
+			if($year):
+			echo ' (' . $year . ')</span>';
+			endif;
+		  ?>
+
 			<?php the_content(); ?>
+
+			<?php if( have_rows('publication_upload') ): ?>
+
+	<ul class="grey lighten-4 files">
+		<li class="files-title">
+			Files
+		</li>
+
+	<?php while( have_rows('publication_upload') ): the_row();
+
+		// vars
+		$file = get_sub_field('file');
+		$extension = end(explode(".", $file['url']));
+
+		?>
+
+		<li class="file">
+
+	    <a href="<?php echo $file['url']; ?>"><?php echo $file['title'] . ' (' . strtoupper($extension) . ')'; ?></a>
+
+		</li>
+
+	<?php endwhile; ?>
+
+	</ul>
+
+<?php endif; ?>
 
 	    <?php wp_link_pages(); ?>
 

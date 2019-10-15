@@ -40,6 +40,18 @@ function register_acf_block_types() {
     ));
 
     acf_register_block_type(array(
+        'name'              => 'carousel',
+        'title'             => __('Carousel'),
+        'description'       => __('Carousel layout'),
+        'render_template' => get_template_directory() . '/blocks/layouts/carousel.php',
+        'category'          => 'formatting',
+        'icon'              => 'format-gallery',
+        //'enqueue_style' => get_template_directory_uri() . '/assets/css/style.css',
+        'keywords'          => array( 'carousel', 'gallery' ),
+        //'mode' => 'auto'
+    ));
+
+    acf_register_block_type(array(
         'name'              => 'paragraph_with_image',
         'title'             => __('Paragraph with Image'),
         'description'       => __('Paragraph with image layout'),

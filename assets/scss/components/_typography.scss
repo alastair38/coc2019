@@ -94,8 +94,11 @@ width: 1.5rem;
   width: 1.2rem;
 }
 }
-a {
+main a {
   &:hover, &:focus {
+  text-decoration-color: currentColor;
+  transition: 350ms;
+  text-decoration: underline;
     svg {
       fill: $neutral-dark !important;
       transition: 350ms;

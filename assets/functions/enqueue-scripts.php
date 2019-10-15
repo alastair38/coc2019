@@ -15,9 +15,9 @@ function site_scripts() {
   wp_enqueue_script( 'materialize-js', 'https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js', array( 'jquery' ), '', true );
 
     // Uncomment if adding Slick slider script
-  if(is_single()){
-  // wp_enqueue_script( 'slick-js', 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', array(), '', true );
-  // wp_enqueue_script( 'slick-init', get_template_directory_uri() . '/assets/js/slick_init.js', array( 'jquery' ), '', true );
+  if(is_front_page()){
+   wp_enqueue_script( 'slick-js', 'https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js', array(), '', true );
+   wp_enqueue_script( 'slick-init', get_template_directory_uri() . '/assets/js/slick_init.js', array( 'jquery' ), '', true );
   }
     // Adding Cookie Consent scripts file in the footer
     $cookies = get_field('information_collected', 'option');
@@ -40,7 +40,7 @@ function site_scripts() {
 
     // Register Slick stylesheet
 
-
+    wp_enqueue_style( 'slick-style', 'https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css', array(), '', 'all' );
 
 
     wp_enqueue_style( 'icons-style', 'https://fonts.googleapis.com/icon?family=Material+Icons', array(), '', 'all' );

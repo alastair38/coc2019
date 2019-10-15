@@ -17,12 +17,28 @@ main {
   flex: 1 0 auto;
 }
 
+// Login page
+
+.login {
+  padding: 4rem;
+}
+
 button,
 input,
 optgroup,
 select,
 textarea {
   font-family: $font-stack;
+}
+
+// Screen Reader Text
+
+.screen-reader-text {
+  position: absolute !important; /* Outside the DOM flow */
+  height: 1px; width: 1px; /* Nearly collapsed */
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE 7+ only support clip without commas */
+  clip: rect(1px, 1px, 1px, 1px); /* All other browsers */
 }
 
 ul {
@@ -36,7 +52,20 @@ ul {
   }
 }
 
+ul.files {
+  padding: 1rem;
+  margin: 2rem 0;
+  li.files-title {
+    font-weight: 600;
+  }
+  li.file {
+    padding: 0.25rem 0;
+  }
+}
+
+
 a {
+  transition: 350ms;
 	color: $link-color;
 	text-decoration: none;
 
@@ -46,26 +75,38 @@ a {
 
 // Main content link Styles
 
+// .entry-content p, li.file {
+//    a {
+//     position: relative;
+//     &:after {
+//       content: '';
+//       height: 2px;
+//       width: 0%;
+//       display: inline-block;
+//       background: currentColor;
+//       position: absolute;
+//       left: 0;
+//       bottom: -3px;
+//       transition: 350ms;
+//     }
+//     &:hover:after, &:focus:after {
+//       width: 100%;
+//     }
+//   }
+// }
+
+// Entry Content alignment
+
 .entry-content {
-   p a {
-    position: relative;
-    &:after {
-      content: '';
-      height: 2px;
-      width: 0%;
-      display: inline-block;
-      background: currentColor;
-      position: absolute;
-      left: 0;
-      bottom: -3px;
-      transition: 350ms;
-    }
-    &:hover:after, &:focus:after {
-      width: 100%;
-    }
-  }
+  text-align: justify;
 }
 
+// Publications styles
+.single-publications .meta {
+  font-weight: 600;
+  padding: 1rem 0;
+  display: block;
+}
 
 // Positioning
 .valign-wrapper {
@@ -154,23 +195,21 @@ blockquote {
     color: color("materialize-red", "base");
   }
   &:before {
-  font-family: "Material Icons";
-  content: "\e244";
+  content: "\275D";;
   font-size: 6rem;
   position: absolute;
   color: rgba(0,0,0,.03);
-  left: 0;
+  left: .5rem;
   top: 0;
-  transform: rotate(180deg);
+
   z-index: -1;
   }
   &:after {
-    font-family: "Material Icons";
-    content: "\e244";
+    content: "\275E";
     font-size: 6rem;
     position: absolute;
     color: rgba(0,0,0,.03);
-    right: 0;
+    right: .5rem;
     bottom: 0;
     z-index: -1;
   }

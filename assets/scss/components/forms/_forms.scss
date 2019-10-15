@@ -13,6 +13,22 @@ label {
   color: $input-border-color;
 }
 
+// ACF Form Overrides
+
+.acf-form {
+  border: 1px solid color("grey", "lighten-2");
+  border-radius: 3px;
+  padding: 2rem;
+  .acf-form-submit .btn-flat {
+    width: 100%;
+    text-align: center;
+    margin-top: 3rem;
+    &:hover, &:focus {
+      background: color("green", "base") !important;
+    }
+  }
+}
+
 @import 'input-fields';
 @import 'radio-buttons';
 @import 'checkboxes';

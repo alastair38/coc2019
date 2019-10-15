@@ -19,22 +19,23 @@
 				<?php joints_top_nav(); ?>
 			</span>
 
-			<ul id="slide-out" class="sidenav">
-				<?php if(is_front_page()){?>
-				<li class="bold upper h6 center">
+			<ul id="slide-out" class="sidenav amber lighten-1 hide-on-large-only">
+
+				<li class="white bold upper h6 center">
 						<?php bloginfo('name'); ?>
 				</li>
-				<li class="active">
+				<?php if(is_front_page()){?>
+				<li class="active white">
 					<a href="<?php bloginfo('url'); ?>">Home</a>
 				</li>
 				<?php } else {?>
-				<li>
+				<li class="white">
 					<a href="<?php bloginfo('url'); ?>">Home</a>
 				</li>
 				<?php }?>
     <?php joints_top_nav(); ?>
   </ul>
-  <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <a href="#" data-target="slide-out" class="sidenav-trigger hide-on-large-only"><i class="material-icons">menu</i></a>
 			<!-- <ul id="slide-out" class="side-nav">
 	 			<li class="center">
 	 				<img id="mobilelogo"

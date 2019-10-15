@@ -41,7 +41,7 @@ require_once(get_template_directory().'/assets/translation/translation.php');
 // Use this as a template for custom post types
 
 // Customize the WordPress login menu
-// require_once(get_template_directory().'/assets/functions/login.php');
+require_once(get_template_directory().'/assets/functions/login.php');
 
 // Customize the WordPress admin
 require_once(get_template_directory().'/assets/functions/admin.php');

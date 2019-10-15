@@ -1,6 +1,8 @@
 // shared styles
 .btn,
-.btn-flat {
+.btn-flat,
+.acf-button.button,
+.login-submit input {
   border: $button-border;
   border-radius: $button-radius;
   display: inline-block;
@@ -10,6 +12,27 @@
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
+}
+
+[data-event="add-row"],
+[data-name="add"] {
+  background: color("grey", "darken-3");
+  color: white;
+  font-size: .8rem;
+  height: 28px;
+  line-height: 28px;
+  margin-left: 1rem;
+  &:hover, &:focus {
+    background: color("grey", "darken-2");
+  }
+}
+
+.login-submit input {
+  background: color("grey", "darken-3");
+  color: white;
+  &:hover, &:focus {
+    background: color("grey", "darken-2");
+  }
 }
 
 // Disabled shared style

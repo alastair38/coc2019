@@ -33,17 +33,17 @@ $map_key = get_field('api_key', 'option');
 
 					<div class="contact-card">
 
-						<div class="cc-content col s12">
+						<div class="cc-content">
 							<p class="title h5 light">Contact Details</p>
 							<p>' . $name . '</p>
 							<p>' . $street . '<br>' . $town . '<br>' . $zip . '</p>';
 
 							if($email):
-							echo '<p><a href="mailto:' . $email . '">' . $email . '<svg class="icon icon-mail left"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-mail"></use></svg></a></p>';
+							echo '<p><a href="mailto:' . $email . '">' . $email . '<svg class="icon icon-mail left hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-mail"></use></svg></a></p>';
 							endif;
 
 							if($phone):
-							echo '<p>' . $phone . '<svg class="icon icon-phone left"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-phone"></use></svg></p>';
+							echo '<p>' . $phone . '<svg class="icon icon-phone left hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-phone"></use></svg></p>';
 							endif;
 
 							if ($contact_map) {

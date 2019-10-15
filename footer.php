@@ -21,7 +21,7 @@
 
 		      <div class="col <?php echo 's' . $cols;?>">
 						<a href="<?php the_sub_field('link_to'); ?>"><img class="responsive-img" alt="<?php echo $image['alt']; ?>" src="<?php echo $image['url']; ?>"></a>
-						
+
 					</div>
 
 		    	<?php endwhile; ?>
@@ -38,15 +38,15 @@
 				echo '<ul id="contact" class="col s12">';
 
 				if($fb):
-					echo '<li><a href="' . $fb . '">Facebook<svg class="icon icon-facebook right"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>';
+					echo '<li><a href="' . $fb . '">Facebook<svg class="icon icon-facebook right hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-facebook"></use></svg></a></li>';
 		 		endif;
 
 				if($twitter):
-					echo '<li><a href="https://twitter.com/' . $twitter . '">Twitter<svg class="icon icon-twitter right"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>';
+					echo '<li><a href="https://twitter.com/' . $twitter . '">Twitter<svg class="icon icon-twitter right hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-twitter"></use></svg></a></li>';
 		 		endif;
 
 				if($mail):
-					echo '<li><a href="mailto:' . $mail . '">Email<svg class="icon icon-mail right"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-mail"></use></svg></a></li>';
+					echo '<li><a href="mailto:' . $mail . '">Email<svg class="icon icon-mail right hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-mail"></use></svg></a></li>';
 		 		endif;
 
 				echo '</ul>';
