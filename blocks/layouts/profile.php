@@ -44,8 +44,8 @@ if( have_rows('profile_details') ):
 
       echo '<div class="' . $className . ' col s12">
 
-      <img class="col s3 no-pad" src="' . $profileImg['sizes']['blog-thumbnail size'] . '" />
-      <div class="content col s9">
+      <img class="col s12 m3 no-pad" src="' . $profileImg['sizes']['blog-thumbnail size'] . '" />
+      <div class="content col s12 m9">
       <h2 class="h6">' . $profileName . '</h2>
       <p class="thin">' . $profileText . '</p>';
       if($profileContact) {

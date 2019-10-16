@@ -2196,9 +2196,15 @@ figure {
 
 figure.left {
   margin: 0rem 1rem 0rem 0; }
+  @media only screen and (max-width: 600px) {
+    figure.left {
+      margin: 0 0 1rem 0; } }
 
 figure.right {
   margin: 0rem 0rem 0rem 1rem; }
+  @media only screen and (max-width: 600px) {
+    figure.right {
+      margin: 0 0 1rem 0; } }
 
 .p-image-block p:first-of-type {
   margin-top: 0; }
@@ -3604,9 +3610,15 @@ main a, footer a {
     margin-top: 0; }
   .profile .content {
     padding-bottom: 1rem; }
+    @media only screen and (max-width: 600px) {
+      .profile .content {
+        padding: 1rem 0 0 0; } }
 
 [id*="profile-block"] .profile {
   padding: 2rem 0rem 1rem 0rem; }
+  @media only screen and (max-width: 600px) {
+    [id*="profile-block"] .profile {
+      padding: 0; } }
 
 ul.grid-gallery {
   display: grid;
@@ -3638,10 +3650,7 @@ ul.grid-gallery {
 
 .blog-card {
   align-items: center;
-  display: grid;
   background: #ffffff;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
   border: 1px solid #e0e0e0;
   margin-bottom: 2rem;
   border-radius: 3px;
@@ -3650,6 +3659,7 @@ ul.grid-gallery {
     margin-bottom: 0; }
   @media only screen and (min-width: 601px) {
     .blog-card {
+      display: grid;
       grid-template-columns: 150px 1fr;
       grid-template-rows: 150px; } }
   .blog-card h2, .blog-card h3 {

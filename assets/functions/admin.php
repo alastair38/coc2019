@@ -117,12 +117,6 @@ function contextual_help_list_remove(){
     $current_screen->remove_help_tabs();
 }
 
-function custom_admin_open_sans_font_frontend_toolbar() {
-    if(current_user_can('administrator')) {
-        echo '<style>#wpadminbar {background: tomato !important;}</style>';
-    }
-}
-add_action( 'wp_head', 'custom_admin_open_sans_font_frontend_toolbar' );
 // Custom Backend Footer
 function acbase_custom_admin_footer() {
 	_e('<span id="footer-thankyou">Developed by <a href="https://alastaircox.com" target="_blank">Alastair Cox</a></span>.', 'acbase');

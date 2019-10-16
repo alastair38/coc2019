@@ -314,10 +314,16 @@ figure{
 
 figure.left {
   margin: 0rem 1rem 0rem 0;
+  @media #{$small-and-down} {
+    margin: 0 0 1rem 0;
+  }
 }
 
 figure.right {
   margin: 0rem 0rem 0rem 1rem;
+  @media #{$small-and-down} {
+    margin: 0 0 1rem 0;
+  }
 }
 
 .p-image-block p:first-of-type {

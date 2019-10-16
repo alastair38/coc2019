@@ -27,6 +27,9 @@
 
   border-bottom: 1px solid color("grey", "lighten-2");
   .content {
+    @media #{$small-and-down} {
+    padding: 1rem 0 0 0;
+    }
     padding-bottom: 1rem;
   }
 }
@@ -34,6 +37,9 @@
 [id*="profile-block"] {
   .profile {
     padding: 2rem 0rem 1rem 0rem;
+    @media #{$small-and-down} {
+    padding: 0;
+    }
   }
 }
 
@@ -73,10 +79,8 @@ ul.grid-gallery {
 
 .blog-card {
   align-items: center;
-  display: grid;
+
   background: $neutral-light;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
   border: 1px solid color("grey", "lighten-2");
   margin-bottom: 2rem;
   border-radius: 3px;
@@ -85,6 +89,7 @@ ul.grid-gallery {
     margin-bottom: 0;
   }
   @media #{$medium-and-up} {
+    display: grid;
     grid-template-columns: 150px 1fr;
     grid-template-rows: 150px;
   }
