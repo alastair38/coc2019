@@ -3719,15 +3719,20 @@ svg.icon {
   svg.icon.small {
     width: 1.2rem; }
 
-main a:hover, main a:focus {
-  text-decoration-color: currentColor;
-  transition: 350ms;
-  text-decoration: underline; }
-  main a:hover svg, main a:focus svg {
-    fill: #212121 !important;
+main a, footer a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  transition: 350ms; }
+  main a:hover, main a:focus, footer a:hover, footer a:focus {
+    text-decoration-color: currentColor;
+    transition: 350ms;
+    text-decoration: underline; }
+    main a:hover svg, main a:focus svg, footer a:hover svg, footer a:focus svg {
+      fill: #212121 !important;
+      transition: 350ms; }
+  main a svg, footer a svg {
+    fill: currentColor;
     transition: 350ms; }
-main a svg {
-  fill: currentColor; }
 
 .scale-transition {
   transition: transform 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important; }
@@ -3776,8 +3781,6 @@ ul.grid-gallery {
     display: flex;
     align-items: center;
     justify-content: center; }
-    ul.grid-gallery li img {
-      max-height: 70%; }
 
 .contact-card {
   border: 1px solid #e0e0e0;

@@ -33,7 +33,7 @@ function acbase_events() {
       'menu_position' => 6, /* this is what order you want it to appear in on the left hand side menu */
       'menu_icon' => 'dashicons-calendar-alt', /* the icon for the custom post type menu */
       'has_archive' => true, /* you can rename the slug here */
-      'rewrite'     => ['slug' => 'events'],
+      'rewrite'     => ['slug' => 'events', 'with_front' => false],
       'capability_type' => 'post',
       'hierarchical' => false,
       'show_in_rest' => true,
@@ -100,7 +100,7 @@ function acbase_publications() {
       'menu_position' => 6, /* this is what order you want it to appear in on the left hand side menu */
       'menu_icon' => 'dashicons-format-aside', /* the icon for the custom post type menu */
       'has_archive' => true, /* you can rename the slug here */
-      'rewrite'     => ['slug' => 'publications'],
+      'rewrite'     => ['slug' => 'publications', 'with_front' => false],
       'capability_type' => 'post',
       'hierarchical' => false,
       'show_in_rest' => true,
