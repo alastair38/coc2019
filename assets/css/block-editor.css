@@ -2837,13 +2837,14 @@ table span.badge {
 
 .slider, .slick-slide {
   height: 80vh !important; }
+  .slider img, .slick-slide img {
+    width: 100%; }
 
 @media only screen and (max-width: 992px) {
   .slider, .slick-slide {
     height: 300px !important; } }
 @media only screen and (max-width: 992px) {
   .slick-slide img {
-    width: 100%;
     object-fit: cover;
     height: 300px !important; } }
 :not(.home) > footer.page-footer {

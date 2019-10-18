@@ -175,6 +175,9 @@ width: 100%;
 
 .slider, .slick-slide {
   height: 80vh !important;
+  img {
+    width: 100%;
+  }
 }
 
 @media #{$medium-and-down} {
@@ -185,7 +188,6 @@ width: 100%;
 
 @media #{$medium-and-down} {
   .slick-slide img {
-    width: 100%;
     object-fit: cover;
     height: 300px !important;
   }
