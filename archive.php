@@ -3,7 +3,7 @@
 
 <main class="container">
 
-		<div class="row" role="main">
+		<div class="row archive">
 
 		    <div class="col s12">
 

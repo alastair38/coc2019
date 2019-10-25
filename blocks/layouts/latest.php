@@ -34,7 +34,7 @@ $args = array(
 
 $latest_posts = get_posts( $args );
 
-echo '<div class="row block ' . $bg . ' lighten-4"><div class="container">';
+echo '<div class="row block ' . $bg . ' lighten-4"><div class="latest-news container">';
   echo '<h2 class="col s12 h4">Latest News</h2><div class="col s12">';
 foreach($latest_posts as $post) {
   setup_postdata( $post );?>

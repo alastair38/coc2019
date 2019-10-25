@@ -2,7 +2,7 @@
 get_header(); ?>
 
 <main class="container">
-	<div class="row">
+	<div class="row parent">
 
 		<?php if (have_posts()) : while (have_posts()) : the_post();
 

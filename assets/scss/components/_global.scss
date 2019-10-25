@@ -356,13 +356,19 @@ figure.right {
 // Pagination
 
 .pagination {
-
+  display: flex;
+  justify-content: center;
   li {
     display: inline-block;
     border-radius: 2px;
     text-align: center;
     vertical-align: top;
     height: 30px;
+    line-height: 30px;
+    margin: 0 1rem;
+    &.page-item {
+      width: 30px;
+    }
 
     a {
       color: #444;
@@ -374,7 +380,6 @@ figure.right {
 
     &.active a { color: #fff; }
 
-    &.active { background-color: $primary-color; }
 
     &.disabled a {
       cursor: default;

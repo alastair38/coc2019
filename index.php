@@ -3,9 +3,9 @@
 
 <main class="container">
 
-		<div class="row" role="main">
+		<div class="row blog" >
 
-		    <div class="col s12">
+		    <div class="col s12 latest-news">
 
 					<header class="archive-header">
 						<h1 class="page-title h3"><?php single_post_title();?></h1>

@@ -32,7 +32,7 @@ $image = get_field('para_image');
 ?>
 <div id="<?php echo esc_attr($id); ?>" class="col s12 no-pad p-image-block">
     <figure class="image <?php echo $class; ?>"><img class="responsive-img" src="<?php echo $image['sizes']['medium']; ?>"/>
-      <figcaption><?php echo $text; ?></figcaption>
+      <figcaption><span class="img-caption"><?php echo $text; ?></span></figcaption>
     </figure>
     <?php the_field('paragraph_text');
     //print_R($image);?>

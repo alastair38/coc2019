@@ -52,7 +52,6 @@ function site_scripts() {
     wp_enqueue_style( 'site-style', get_template_directory_uri() . '/assets/css/style.css', array(), '', 'all' );
 
 
-
     // Deregister admin stylesheet so that it doesn't load on the front-end form
 
     wp_deregister_style( 'wp-admin' );
@@ -65,3 +64,21 @@ function site_scripts() {
     }
 }
 add_action('wp_enqueue_scripts', 'site_scripts', 999);
+
+add_action( 'wp_enqueue_scripts', 'enqueue_my_styles_and_scripts' );
+/**
+ * Enqueue styles and scripts conditionally.
+ *
+ * Load stylesheets and scripts specifically for IE. IE10 and above does
+ * not support conditional comments in standards mode.
+ *
+ * @link https://msdn.microsoft.com/en-us/library/ms537512(v=vs.85).aspx
+ */
+function enqueue_my_styles_and_scripts() {
+
+    // Internet Explorer specific stylesheet.
+    wp_enqueue_style( 'old-ie', get_stylesheet_directory_uri() . '/assets/css/styleie.css', array( 'site-style' ), '20141010' );
+    wp_style_add_data( 'old-ie', 'conditional', 'lte IE 9' );
+    
+
+}

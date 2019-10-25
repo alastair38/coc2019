@@ -19,9 +19,10 @@
 			$author = get_field('author');
 			$journal = get_field('journal');
 			$year = get_field('year');
-			echo '<span class="meta">';
+
 
 			if($author):
+			echo '<span class="meta">';
 			echo $author;
 			endif;
 
