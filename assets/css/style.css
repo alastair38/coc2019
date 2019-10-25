@@ -4200,6 +4200,11 @@ ul.grid-gallery {
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; }
 
+#fixed-sub {
+  width: 40px; }
+  #fixed-sub a {
+    margin: .25rem 0; }
+
 [data-event="add-row"],
 [data-name="add"] {
   background: #424242;

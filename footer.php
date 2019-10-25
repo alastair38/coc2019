@@ -51,7 +51,24 @@
 
 				echo '</ul>';
 
-				?>
+
+			if(is_user_logged_in() || current_user_can('editor'))  {
+			$subID = get_field('submission_page', 'option');?>
+			<div id="fixed-sub" class="fixed-action-btn">
+				<a class="btn-floating green white-text tooltipped" data-position="left" data-tooltip="Add new publication" href="<?php echo admin_url('post-new.php?post_type=publications'); ?>"><i class="material-icons">book</i></a>
+				<a class="btn-floating green white-text tooltipped" data-position="left" data-tooltip="Add news item" href="<?php echo admin_url('post-new.php'); ?>"><i class="material-icons">post_add</i></a>
+				<?php if(is_single() || is_singular()):?>
+
+				<a class="btn-floating grey darken-3 white-text tooltipped" data-position="left" data-tooltip="Edit page" href="<?php echo get_edit_post_link(); ?>"><i class="material-icons">mode_edit</i></a>
+
+			<?php endif;?>
+
+
+			</div>
+
+			<?php
+
+	 		}?>
 				<div class="col s12">
 					<p class="source-org copyright">
 						<?php bloginfo('name'); ?> &copy; <?php echo date("Y");?>

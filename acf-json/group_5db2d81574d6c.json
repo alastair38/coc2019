@@ -1,0 +1,41 @@
+{
+    "key": "group_5db2d81574d6c",
+    "title": "Notice",
+    "fields": [
+        {
+            "key": "field_5db2d823c1401",
+            "label": "Updating Contact Information",
+            "name": "",
+            "type": "message",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "red",
+                "id": ""
+            },
+            "message": "To edit contact details please visit the <a href=\"\/wp-admin\/admin.php?page=theme-general-settings\">Options page<\/a>",
+            "new_lines": "wpautop",
+            "esc_html": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "page-contact.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1572002213
+}

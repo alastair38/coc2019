@@ -103,7 +103,7 @@ function acbase_publications() {
       'rewrite'     => ['slug' => 'publications', 'with_front' => false],
       'capability_type' => 'post',
       'hierarchical' => false,
-      'show_in_rest' => true,
+      'show_in_rest' => false,
       /* the next one is important, it tells what's enabled in the post editor */
       'supports' => array( 'title', 'page-attributes', 'editor' )
     ) /* end of options */

@@ -14,6 +14,13 @@
   -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
 }
 
+#fixed-sub {
+  width: 40px;
+  a {
+    margin: .25rem 0;
+  }
+}
+
 [data-event="add-row"],
 [data-name="add"] {
   background: color("grey", "darken-3");
