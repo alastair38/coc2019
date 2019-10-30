@@ -34,6 +34,7 @@
 				$fb = get_field("facebook", "options");
 				$twitter = get_field("twitter", "options");
 				$mail = get_field("contact_email", "options");
+				$privacy = get_field("privacy_page_link", "options");
 
 				echo '<ul id="contact" class="col s12">';
 
@@ -47,6 +48,10 @@
 
 				if($mail):
 					echo '<li><a href="mailto:' . $mail . '">Email<svg class="icon icon-mail right hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-mail"></use></svg></a></li>';
+		 		endif;
+
+				if($privacy):
+					echo '<li><a href="' . $privacy . '">Privacy<svg class="icon icon-file-text right hide-on-med-and-down"><use xlink:href="' . get_stylesheet_directory_uri() . '/assets/icons/symbol-defs.svg#icon-file-text"></use></svg></a></li>';
 		 		endif;
 
 				echo '</ul>';
