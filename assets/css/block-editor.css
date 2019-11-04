@@ -2198,13 +2198,15 @@ figure.left {
   margin: 0rem 1rem 0rem 0; }
   @media only screen and (max-width: 600px) {
     figure.left {
-      margin: 0 0 1rem 0; } }
+      margin: 0 0 1rem 0;
+      width: 100%; } }
 
 figure.right {
   margin: 0rem 0rem 0rem 1rem; }
   @media only screen and (max-width: 600px) {
     figure.right {
-      margin: 0 0 1rem 0; } }
+      margin: 0 0 1rem 0;
+      width: 100%; } }
 
 .p-image-block p:first-of-type {
   margin-top: 0; }
@@ -3632,6 +3634,10 @@ ul.grid-gallery {
   border: 1px solid #e0e0e0;
   border-radius: 3px; }
   @supports not (display: grid) {
+    ul.grid-gallery li {
+      width: 24.65%;
+      display: inline-block; } }
+  @supports not (display: flex) {
     ul.grid-gallery li {
       width: 24.65%;
       display: inline-block; } }

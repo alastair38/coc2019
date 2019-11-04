@@ -51,6 +51,12 @@ ul.grid-gallery {
       display: inline-block;
     }
   }
+  @supports not (display: flex) {
+    li {
+      width: 24.65%;
+      display: inline-block;
+    }
+  }
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2rem;
