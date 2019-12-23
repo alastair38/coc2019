@@ -6995,6 +6995,11 @@ input[type=range]::-ms-thumb {
     bottom: auto;
     text-align: center;
     margin-top: 1.2rem; } }
+.editor-post-title__block .editor-post-title__input,
+.edit-post-visual-editor, .edit-post-visual-editor p, .editor-block-list__block-edit.block-editor-block-list__block-edit {
+  font-family: "Montserrat", "Helvetica Neue", sans-serif;
+  font-weight: 400; }
+
 .editor-post-title__block .editor-post-title__input {
   font-size: 42px;
   font-weight: 400;
