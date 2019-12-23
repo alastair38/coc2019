@@ -227,12 +227,12 @@ if( function_exists('acf_add_options_page') ) {
 
 }
 
-add_action('admin_head', 'my_admin_style');
-
-function my_admin_style() {
-  echo '<style>
-			.acf-postbox h2 {
-		background: #ffca28;
-		}
-  </style>';
-}
+// add_action('admin_head', 'my_admin_style');
+//
+// function my_admin_style() {
+//   echo '<style>
+// 			.attachment-filters {
+// 		height: 40px !important;
+// 		}
+//   </style>';
+// }

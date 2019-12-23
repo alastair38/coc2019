@@ -48,6 +48,7 @@ function remove_plugin_image_sizes() {
 
 // theme support for gutenberg block editor styles / slimmed down version of the main stylesheet
 add_theme_support( 'editor-styles' );
+add_theme_support( 'responsive-embeds' );
 add_editor_style( 'assets/css/block-editor.css' );
 
 /* end theme support */
