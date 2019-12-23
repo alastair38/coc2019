@@ -4249,10 +4249,6 @@ button.btn-floating {
   font-size: 0.8rem;
   transform: translateY(-140%); }
 
-.editor-post-title__block .editor-post-title__input,
-.edit-post-visual-editor, .edit-post-visual-editor p, .editor-block-list__block-edit.block-editor-block-list__block-edit {
-  font-family: "Montserrat", "Helvetica Neue", sans-serif; }
-
 .editor-post-title__block .editor-post-title__input {
   font-size: 42px;
   font-weight: 400;
